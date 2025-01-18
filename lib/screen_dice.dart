@@ -1,3 +1,4 @@
+import 'package:first_app/app_background_decoration.dart';
 import 'package:first_app/widget_dice_image.dart';
 import 'package:first_app/widget_white_text.dart';
 import 'package:flutter/material.dart';
@@ -8,13 +9,8 @@ class DiceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Colors.blue, Colors.purple],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
+      width: double.infinity,
+      decoration: appBackgroundDecoration(),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

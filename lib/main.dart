@@ -1,4 +1,4 @@
-import 'package:first_app/screen_dice.dart';
+import 'package:first_app/app_scafold.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const DiceScreen(),
+      home: const AppScafold(),
     );
   }
 }
